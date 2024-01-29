@@ -27,7 +27,7 @@ for (let counter = 0; counter < 3 ;) {
         }
 
         let computerChoice = getComputerChoice();
-
+// compare computer and user varibles to see who wins or if it need rematch
         if (computerChoice === 0 && userChoice === 1) {
             userPoints++;
             counter++;
@@ -70,7 +70,8 @@ for (let counter = 0; counter < 3 ;) {
     else {
         window.prompt("Oops! That's not a valid weapon. Let's try again \nChoose your weapon: \nRock, Paper or Scissors?");  
     }
-}   
+} 
+// show a match result on screen  
 if (userPoints > computerPoints) {
     window.alert("Congratulations! You won Ja-Janken");  
 }
@@ -78,5 +79,5 @@ else {
     window.alert("You lost! Maybe Ja-Janken is not for you");   
 }
 
-// compare computer and user varibles to see who wins or if it need rematch
-// show a match result on console
+
+
